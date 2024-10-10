@@ -19,7 +19,7 @@ async function fetchPokemonDataBeforeRedirect(id) {
       fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then((res) =>
         res.json()
       ),
-      fetch(`https://pokeapi.co/api/v2/pokemon-species/ ${id}`).then((res) =>
+      fetch(`https://pokeapi.co/api/v2/pokemon-species/${id}`).then((res) =>
         res.json()
       ),
     ]);
@@ -47,7 +47,7 @@ function displayPokemons(pokemon) {
     `;
     listItem.addEventListener("click", async () => {
       const success = await fetchPokemonDataBeforeRedirect(pokemonID);
-      if (sucess) {
+      if (success) {
         window.location.href = `./detail.html?id=#${pokemonID}`;
       }
     });

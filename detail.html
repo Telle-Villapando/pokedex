@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokemon Detail</title>
-    <script
-      src="./pokemon-detail.js
-    "
-      defer
-    ></script>
+    <script src="./pokemon-detail.js" defer></script>
   </head>
   <body>
     <main class="detail-main main">
@@ -60,7 +56,7 @@
 
           <div class="pokemon-detail-wrap">
             <div class="pokemon-detail">
-              <img src="./assets/height.svg" alt="height" />
+              <img src="./assets/height.svg" alt="height" class="straighten" />
               <p class="body3-fonts height"></p>
             </div>
             <p class="caption-fonts">Height</p>
@@ -74,29 +70,33 @@
           <p class="body3-fonts pokemon-description"></p>
           <p class="body2-fonts about-text">Base Stats</p>
           <div class="stats-wrapper">
-            <div class="stats-wrap" data-stat="progress-bar">
+            <div class="stats-wrap" data-stat="hp">
               <p class="body3-fonts stats">HP</p>
               <p class="body3-fonts"></p>
               <progress value="" max="100" class="progress-bar"></progress>
             </div>
-            <div class="stats-wrap" data-stat="progress-bar">
-              <p class="body3-fonts stats">HP</p>
+
+            <div class="stats-wrap" data-stat="ATK">
+              <p class="body3-fonts stats">ATK</p>
               <p class="body3-fonts"></p>
               <progress value="" max="100" class="progress-bar"></progress>
             </div>
-            <div class="stats-wrap" data-stat="progress-bar">
-              <p class="body3-fonts stats">HP</p>
+
+            <div class="stats-wrap" data-stat="DEF">
+              <p class="body3-fonts stats">DEF</p>
               <p class="body3-fonts"></p>
               <progress value="" max="100" class="progress-bar"></progress>
             </div>
-            <div class="stats-wrap" data-stat="progress-bar">
-              <p class="body3-fonts stats">HP</p>
+
+            <div class="stats-wrap" data-stat="SATK">
+              <p class="body3-fonts stats">SATK</p>
               <p class="body3-fonts"></p>
               <progress value="" max="100" class="progress-bar"></progress>
             </div>
           </div>
         </div>
       </div>
+      <img src="./assets/pokedex.svg" alt="Pokedex" class="detail-bg" />
     </main>
   </body>
 </html>
